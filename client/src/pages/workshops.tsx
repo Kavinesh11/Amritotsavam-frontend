@@ -46,10 +46,13 @@ export default function Workshops() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       
-      <div className="flex-1 container mx-auto px-4 py-12">
+      <div className="flex-1 container mx-auto px-4 py-12 relative z-10">
+         {/* Background card for readability */}
+         <div className="absolute inset-0 bg-background/80 backdrop-blur-xl -z-10 rounded-3xl mx-4 my-8 shadow-2xl border border-secondary/10" />
+
         <SectionHeading 
           title="Skill Workshops" 
           subtitle="Learn traditional arts from the masters"

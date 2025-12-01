@@ -14,16 +14,19 @@ const TEAMS = [
 
 export default function Leaderboard() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       
-      <div className="flex-1 container mx-auto px-4 py-12">
+      <div className="flex-1 container mx-auto px-4 py-12 relative z-10">
+         {/* Background card for readability */}
+         <div className="absolute inset-0 bg-background/80 backdrop-blur-xl -z-10 rounded-3xl mx-4 my-8 shadow-2xl border border-secondary/10" />
+
         <SectionHeading 
           title="Leaderboard" 
           subtitle="Top performing teams across all events"
         />
 
-        <div className="max-w-4xl mx-auto mt-8 bg-card/50 border border-secondary/30 rounded-xl overflow-hidden shadow-lg">
+        <div className="max-w-4xl mx-auto mt-8 bg-card/50 border border-secondary/30 rounded-xl overflow-hidden shadow-lg backdrop-blur-sm">
           <div className="bg-primary/10 p-6 flex justify-center gap-8">
             <div className="text-center">
               <Trophy className="w-12 h-12 text-secondary mx-auto mb-2" />
