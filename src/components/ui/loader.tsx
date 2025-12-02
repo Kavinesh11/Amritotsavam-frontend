@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import kolamPattern from "@assets/generated_images/traditional_white_kolam_pattern.png";
-import colorSplash from "@assets/generated_images/vibrant_holi_color_splash.png";
+const kolamPattern = "/generated_images/traditional_white_kolam_pattern.png";
+const colorSplash = "/generated_images/vibrant_holi_color_splash.png";
 
 export default function Loader({ onComplete }: { onComplete: () => void }) {
   const containerRef = useRef(null);

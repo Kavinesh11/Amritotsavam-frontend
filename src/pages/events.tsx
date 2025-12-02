@@ -3,11 +3,12 @@ import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin, X } from "lucide-react";
-import cornerOrnament from "@assets/generated_images/traditional_indian_mandala_corner_ornament.png";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+
+const cornerOrnament = "/generated_images/traditional_indian_mandala_corner_ornament.png";
 
 const EVENTS = [
   {

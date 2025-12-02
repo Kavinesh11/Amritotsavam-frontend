@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/section-heading";
-import cornerOrnament from "@assets/generated_images/traditional_indian_mandala_corner_ornament.png";
+const cornerOrnament = "/generated_images/traditional_indian_mandala_corner_ornament.png";
 
 export default function About() {
   return (

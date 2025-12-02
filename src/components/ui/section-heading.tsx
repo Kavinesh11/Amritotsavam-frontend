@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import cornerOrnament from "@assets/generated_images/traditional_indian_mandala_corner_ornament.png";
+const cornerOrnament = "/generated_images/traditional_indian_mandala_corner_ornament.png";
 
 interface SectionHeadingProps {
   title: string;

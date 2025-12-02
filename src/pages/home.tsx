@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import natarajaHero from "@assets/generated_images/lord_nataraja_dancing_cosmic_dance.png";
-import templeBg from "@assets/generated_images/ancient_indian_temple_stone_texture_background.png";
-import cornerOrnament from "@assets/generated_images/traditional_indian_mandala_corner_ornament.png";
 import { Link } from "wouter";
 import { ArrowRight, Calendar } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Loader from "@/components/ui/loader";
+
+const natarajaHero = "/generated_images/lord_nataraja_dancing_cosmic_dance.png";
+const templeBg = "/generated_images/ancient_indian_temple_stone_texture_background.png";
+const cornerOrnament = "/generated_images/traditional_indian_mandala_corner_ornament.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -3,7 +3,8 @@ import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import cornerOrnament from "@assets/generated_images/traditional_indian_mandala_corner_ornament.png";
+
+const cornerOrnament = "/generated_images/traditional_indian_mandala_corner_ornament.png";
 
 const WORKSHOPS = [
   {
